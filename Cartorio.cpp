@@ -1,0 +1,55 @@
+#include <stdio.h> //bliblioteca de comunicação com o usuário
+#include <stdlib.h> //bliblioteca de alocação de espaço de memória
+#include <locale.h> //bliblioteca de alocação de texto por região
+
+int main()
+{    
+    int opcao=0; //Definindo variáveis
+    int laco=1;
+    
+	for(laco=1;laco=1;)
+	{
+	     
+	     system("cls");
+	     
+         setlocale(LC_ALL, "Portuguese"); //Definindo a limguagem do menu
+    
+         printf("### Cartório da EBAC ###\n\n"); // inicio do menu
+         printf("Escolha a opção desejada do menu:\n\n");
+         printf("1 - Registrar nomes \n");
+         printf("2 - Consultar nomes \n");
+         printf("3 - Deletar nomes \n\n"); 
+         printf("Opção: ");//fim do menu
+   
+         scanf("%d", &opcao); // armazenando a escolha do usuário
+    
+         system("cls");
+         
+         
+         switch(opcao)
+         {
+         	case 1:
+         	printf("Você escolheu o registro de nomes!\n");
+	        system("pause");
+			break;
+			
+			case 2:	
+		    printf("Você escolheu consultar os nomes!\n");
+	        system("pause");
+	        break;
+	        
+	        case 3:
+	        printf("Você escolheu deletar nomes!\n");
+	        system("pause");
+			break;	
+		    
+		    default:
+		    printf("Essa opção não esta disponivel\n!");	
+	        system("pause");
+	        break;
+		    
+	     }
+            
+    
+    }  
+}
